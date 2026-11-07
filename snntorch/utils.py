@@ -1,5 +1,6 @@
 # Note: need NumPy 1.17 or later for RNG functions
 import numpy as np
+import torch
 import snntorch as snn
 
 
@@ -131,31 +132,25 @@ def valid_split(ds_train, ds_val, split, seed=0):
 
 
 def reset(net):
-    """Check for the types of LIF neurons contained in net.
-    Reset their hidden parameters to zero and detach them
-    from the current computation graph."""
+    """Reset and detach hidden state in ``net``, including nested neuron modules.
 
-    global is_alpha
-    global is_leaky
-    global is_lapicque
-    global is_rleaky
-    global is_synaptic
-    global is_rsynaptic
-    global is_sconv2dlstm
-    global is_slstm
-
-    is_alpha = False
-    is_leaky = False
-    is_rleaky = False
-    is_synaptic = False
-    is_rsynaptic = False
-    is_lapicque = False
-    is_sconv2dlstm = False
-    is_slstm = False
-
-    _layer_check(net=net)
-
-    _layer_reset()
+    Independent models outside ``net`` are unaffected. Explicit neuron class methods
+    such as ``Leaky.reset_hidden()`` retain their class-wide scope.
+    """
+    # Preserve the type-discovery flags consumed by backprop.TBPTT without using
+    # those flags to reset every registered instance of a class.
+    for name in ("Lapicque", "Leaky", "Synaptic", "Alpha", "RLeaky",
+                 "RSynaptic", "SConv2dLSTM", "SLSTM"):
+        globals()["is_" + name.lower()] = any(
+            isinstance(layer, getattr(snn, name)) for layer in net.modules()
+        )
+    for layer in net.modules():
+        if isinstance(layer, snn.SpikingNeuron) and layer.init_hidden:
+            for name in ("mem", "syn", "spk", "syn_exc", "syn_inh"):
+                if hasattr(layer, name):
+                    state = getattr(layer, name)
+                    if not hasattr(state, "init_flag"):
+                        setattr(layer, name, torch.zeros_like(state).detach())
 
 
 def _layer_check(net):

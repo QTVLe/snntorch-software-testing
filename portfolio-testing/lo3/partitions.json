@@ -1,0 +1,1235 @@
+[
+  {
+    "requirement": "R1",
+    "feature": "reset",
+    "value": "subtract",
+    "test": "test_R1_hand_anchor",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "reset",
+    "value": "zero",
+    "test": "test_R1_hand_anchor",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "reset",
+    "value": "none",
+    "test": "test_R1_hand_anchor",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "parameter",
+    "value": "scalar",
+    "test": "test_R1_pairwise",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "parameter",
+    "value": "vector",
+    "test": "test_R1_pairwise",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "steps",
+    "value": 1,
+    "test": "test_R1_pairwise",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "steps",
+    "value": 2,
+    "test": "test_R1_pairwise",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "steps",
+    "value": 8,
+    "test": "test_R1_pairwise",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "batch",
+    "value": 1,
+    "test": "test_R1_pairwise",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "batch",
+    "value": 3,
+    "test": "test_R1_pairwise",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "dtype",
+    "value": "float32",
+    "test": "test_R1_pairwise",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "dtype",
+    "value": "float64",
+    "test": "test_R1_pairwise",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "state",
+    "value": "explicit",
+    "test": "test_R1_pairwise",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "state",
+    "value": "hidden",
+    "test": "test_R1_pairwise",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "threshold",
+    "value": "below-adjacent",
+    "test": "test_R1_threshold_neighbours",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "threshold",
+    "value": "equal",
+    "test": "test_R1_threshold_neighbours",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "threshold",
+    "value": "above-adjacent",
+    "test": "test_R1_threshold_neighbours",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "beta",
+    "value": -1,
+    "test": "test_R1_beta_clipping",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "beta",
+    "value": 0,
+    "test": "test_R1_beta_clipping",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "beta",
+    "value": 1,
+    "test": "test_R1_beta_clipping",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "beta",
+    "value": 2,
+    "test": "test_R1_beta_clipping",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "invalid",
+    "value": "reset-name",
+    "test": "test_R1_rejection",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "invalid",
+    "value": "hidden-explicit-state",
+    "test": "test_R1_rejection",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "synaptic-state",
+    "value": "explicit",
+    "test": "test_R1_synaptic_equations",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "synaptic-state",
+    "value": "hidden",
+    "test": "test_R1_synaptic_equations",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "inhibition",
+    "value": "explicit",
+    "test": "test_R1_inhibition_and_reset_change",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R1",
+    "feature": "inhibition",
+    "value": "hidden",
+    "test": "test_R1_inhibition_and_reset_change",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "family",
+    "value": "ste",
+    "test": "test_R2_surrogate",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "family",
+    "value": "triangular",
+    "test": "test_R2_surrogate",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "family",
+    "value": "fast",
+    "test": "test_R2_surrogate",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "family",
+    "value": "sigmoid",
+    "test": "test_R2_surrogate",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "family",
+    "value": "escape",
+    "test": "test_R2_surrogate",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "family",
+    "value": "lso",
+    "test": "test_R2_surrogate",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "family",
+    "value": "sfs",
+    "test": "test_R2_surrogate",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "family",
+    "value": "sso-zero",
+    "test": "test_R2_surrogate",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "sign",
+    "value": "negative",
+    "test": "test_R2_surrogate",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "sign",
+    "value": "zero",
+    "test": "test_R2_surrogate",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "sign",
+    "value": "positive",
+    "test": "test_R2_surrogate",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "parameters",
+    "value": 0.5,
+    "test": "test_R2_surrogate",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "parameters",
+    "value": 2.0,
+    "test": "test_R2_surrogate",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "dtype",
+    "value": "float32",
+    "test": "test_R2_surrogate",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "dtype",
+    "value": "float64",
+    "test": "test_R2_surrogate",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "sfs-support",
+    "value": "below-B",
+    "test": "test_R2_surrogate",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "sfs-support",
+    "value": "at-B",
+    "test": "test_R2_surrogate",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "sfs-support",
+    "value": "above-B",
+    "test": "test_R2_surrogate",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "stochastic-support",
+    "value": "bounded-negative",
+    "test": "test_R2_stochastic_support",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "stochastic-support",
+    "value": "positive-one",
+    "test": "test_R2_stochastic_support",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "integration",
+    "value": "input",
+    "test": "test_R2_autograd_integration",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "integration",
+    "value": "weight",
+    "test": "test_R2_autograd_integration",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "integration",
+    "value": "beta",
+    "test": "test_R2_autograd_integration",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "integration",
+    "value": "threshold",
+    "test": "test_R2_autograd_integration",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R2",
+    "feature": "factory",
+    "value": "triangular-default",
+    "test": "test_R2_triangular_public_wrapper",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "rate",
+    "value": 0,
+    "test": "test_R3_rate_exact",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "rate",
+    "value": 1,
+    "test": "test_R3_rate_exact",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "rate-probability",
+    "value": 0.1,
+    "test": "test_R3_rate_statistical",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "rate-probability",
+    "value": 0.5,
+    "test": "test_R3_rate_statistical",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "rate-probability",
+    "value": 0.9,
+    "test": "test_R3_rate_statistical",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "rate-time",
+    "value": "static",
+    "test": "test_R3_rate_exact",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "rate-time",
+    "value": "time-varying",
+    "test": "test_R3_rate_exact",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "rate-time",
+    "value": "delayed",
+    "test": "test_R3_rate_exact",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "rate-time",
+    "value": "clipped",
+    "test": "test_R3_rate_exact",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "latency-values",
+    "value": 0,
+    "test": "test_R3_latency",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "latency-values",
+    "value": 0.1,
+    "test": "test_R3_latency",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "latency-values",
+    "value": 0.1001,
+    "test": "test_R3_latency",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "latency-values",
+    "value": 0.5,
+    "test": "test_R3_latency",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "latency-values",
+    "value": 1,
+    "test": "test_R3_latency",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "latency-code",
+    "value": "log",
+    "test": "test_R3_latency",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "latency-code",
+    "value": "linear",
+    "test": "test_R3_latency",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "clip",
+    "value": false,
+    "test": "test_R3_latency",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "clip",
+    "value": true,
+    "test": "test_R3_latency",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "delay",
+    "value": 0,
+    "test": "test_R3_latency",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "delay",
+    "value": 2,
+    "test": "test_R3_latency",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "latency-normalized",
+    "value": "linear-example",
+    "test": "test_R3_latency_normalized",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "labels",
+    "value": "repeated",
+    "test": "test_R3_one_hot",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "labels",
+    "value": "shuffled",
+    "test": "test_R3_one_hot",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "invalid",
+    "value": "rate_negative_steps",
+    "test": "test_R3_invalid",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "invalid",
+    "value": "rate_negative_first",
+    "test": "test_R3_invalid",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "invalid",
+    "value": "rate_conflict",
+    "test": "test_R3_invalid",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "invalid",
+    "value": "rate_first_oob",
+    "test": "test_R3_invalid",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "invalid",
+    "value": "latency_low",
+    "test": "test_R3_invalid",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "invalid",
+    "value": "latency_high",
+    "test": "test_R3_invalid",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "invalid",
+    "value": "latency_tau",
+    "test": "test_R3_invalid",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "invalid",
+    "value": "latency_threshold0",
+    "test": "test_R3_invalid",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "invalid",
+    "value": "latency_threshold1",
+    "test": "test_R3_invalid",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "invalid",
+    "value": "latency_first",
+    "test": "test_R3_invalid",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "invalid",
+    "value": "onehot_high",
+    "test": "test_R3_invalid",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "invalid",
+    "value": "onehot_negative",
+    "test": "test_R3_invalid",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R3",
+    "feature": "invalid",
+    "value": "onehot_shape",
+    "test": "test_R3_invalid",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "pair",
+    "value": "Leaky/Leaky",
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "pair",
+    "value": "Leaky/Synaptic",
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "pair",
+    "value": "Synaptic/Leaky",
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "pair",
+    "value": "Synaptic/Synaptic",
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "reset",
+    "value": "subtract",
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "reset",
+    "value": "zero",
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "reset",
+    "value": "none",
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "length",
+    "value": 1,
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "length",
+    "value": 2,
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "length",
+    "value": 8,
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "batch",
+    "value": 1,
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "batch",
+    "value": 3,
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "dtype",
+    "value": "float32",
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "dtype",
+    "value": "float64",
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "depth",
+    "value": 1,
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "depth",
+    "value": 2,
+    "test": "test_R4_model_sequence",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "scope",
+    "value": "same-class",
+    "test": "test_R4_class_scope",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "scope",
+    "value": "mixed-class",
+    "test": "test_R4_class_scope",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "scope",
+    "value": "common-root",
+    "test": "test_R4_nested_and_global_scope",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "loop-length",
+    "value": 0,
+    "test": "test_R4_reset_zero_one_many",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "loop-length",
+    "value": 1,
+    "test": "test_R4_reset_zero_one_many",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R4",
+    "feature": "loop-length",
+    "value": 3,
+    "test": "test_R4_reset_zero_one_many",
+    "boundary": true,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R5",
+    "feature": "genuine-users",
+    "value": "five-users",
+    "test": "human_session_not_executed",
+    "boundary": false,
+    "executed": false,
+    "passed": false
+  },
+  {
+    "requirement": "R6",
+    "feature": "archive-format",
+    "value": "tar",
+    "test": "test_R6_valid_archives",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "archive-format",
+    "value": "tar.gz",
+    "test": "test_R6_valid_archives",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "archive-format",
+    "value": "tgz",
+    "test": "test_R6_valid_archives",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "archive-format",
+    "value": "tar.xz",
+    "test": "test_R6_valid_archives",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "archive-format",
+    "value": "zip",
+    "test": "test_R6_valid_archives",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "archive-format",
+    "value": "gz",
+    "test": "test_R6_valid_archives",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "archive-attack",
+    "value": "parent",
+    "test": "test_R6_archive_escape",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "archive-attack",
+    "value": "absolute",
+    "test": "test_R6_archive_escape",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "archive-attack",
+    "value": "symlink",
+    "test": "test_R6_archive_escape",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "archive-attack",
+    "value": "hardlink",
+    "test": "test_R6_archive_escape",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "archive-attack",
+    "value": "backslash",
+    "test": "test_R6_archive_escape",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "archive-attack",
+    "value": "drive",
+    "test": "test_R6_archive_escape",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "transport-failure",
+    "value": "tls",
+    "test": "test_R6_https_failure",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "transport-failure",
+    "value": "timeout",
+    "test": "test_R6_https_failure",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "transport-failure",
+    "value": "endpoint",
+    "test": "test_R6_https_failure",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "transport-failure",
+    "value": "redirect",
+    "test": "test_R6_https_failure",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "transport-failure",
+    "value": "dropbox_tls",
+    "test": "test_R6_https_failure",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "redirect-target",
+    "value": "https",
+    "test": "test_R6_redirect_policy",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "redirect-target",
+    "value": "http",
+    "test": "test_R6_redirect_policy",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "atomic-download",
+    "value": "checksum",
+    "test": "test_R6_atomic_download",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "atomic-download",
+    "value": "partial",
+    "test": "test_R6_atomic_download",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "atomic-download",
+    "value": "success",
+    "test": "test_R6_atomic_download",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "workflow",
+    "value": "download-extract",
+    "test": "test_R6_download_extract_control",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "workflow",
+    "value": "cached-valid",
+    "test": "test_R6_download_extract_control",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "filter-runtime",
+    "value": "unavailable-fails-closed",
+    "test": "test_R6_tar_filter_required",
+    "boundary": false,
+    "executed": true,
+    "passed": true
+  },
+  {
+    "requirement": "R6",
+    "feature": "existing-symlink",
+    "value": "genuine-filesystem-integration",
+    "test": "native_symlink_not_executed",
+    "boundary": false,
+    "executed": false,
+    "passed": false
+  }
+]

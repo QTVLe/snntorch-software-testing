@@ -1,0 +1,156 @@
+{
+  "factors": {
+    "reset": [
+      "subtract",
+      "zero",
+      "none"
+    ],
+    "parameter": [
+      "scalar",
+      "vector"
+    ],
+    "steps": [
+      1,
+      2,
+      8
+    ],
+    "batch": [
+      1,
+      3
+    ],
+    "dtype": [
+      "float32",
+      "float64"
+    ],
+    "hidden": [
+      false,
+      true
+    ],
+    "device": [
+      "cpu"
+    ]
+  },
+  "feasible_configurations": 144,
+  "cases": [
+    {
+      "id": "PW-000",
+      "reset": "subtract",
+      "parameter": "scalar",
+      "steps": 1,
+      "batch": 1,
+      "dtype": "float32",
+      "hidden": false,
+      "device": "cpu"
+    },
+    {
+      "id": "PW-001",
+      "reset": "zero",
+      "parameter": "vector",
+      "steps": 2,
+      "batch": 3,
+      "dtype": "float64",
+      "hidden": true,
+      "device": "cpu"
+    },
+    {
+      "id": "PW-002",
+      "reset": "none",
+      "parameter": "scalar",
+      "steps": 8,
+      "batch": 1,
+      "dtype": "float64",
+      "hidden": true,
+      "device": "cpu"
+    },
+    {
+      "id": "PW-003",
+      "reset": "none",
+      "parameter": "vector",
+      "steps": 8,
+      "batch": 3,
+      "dtype": "float32",
+      "hidden": false,
+      "device": "cpu"
+    },
+    {
+      "id": "PW-004",
+      "reset": "subtract",
+      "parameter": "vector",
+      "steps": 1,
+      "batch": 3,
+      "dtype": "float64",
+      "hidden": true,
+      "device": "cpu"
+    },
+    {
+      "id": "PW-005",
+      "reset": "zero",
+      "parameter": "scalar",
+      "steps": 2,
+      "batch": 1,
+      "dtype": "float32",
+      "hidden": false,
+      "device": "cpu"
+    },
+    {
+      "id": "PW-006",
+      "reset": "subtract",
+      "parameter": "scalar",
+      "steps": 2,
+      "batch": 3,
+      "dtype": "float32",
+      "hidden": true,
+      "device": "cpu"
+    },
+    {
+      "id": "PW-007",
+      "reset": "subtract",
+      "parameter": "vector",
+      "steps": 8,
+      "batch": 1,
+      "dtype": "float64",
+      "hidden": false,
+      "device": "cpu"
+    },
+    {
+      "id": "PW-008",
+      "reset": "zero",
+      "parameter": "scalar",
+      "steps": 1,
+      "batch": 1,
+      "dtype": "float32",
+      "hidden": false,
+      "device": "cpu"
+    },
+    {
+      "id": "PW-009",
+      "reset": "zero",
+      "parameter": "scalar",
+      "steps": 8,
+      "batch": 1,
+      "dtype": "float32",
+      "hidden": false,
+      "device": "cpu"
+    },
+    {
+      "id": "PW-010",
+      "reset": "none",
+      "parameter": "scalar",
+      "steps": 1,
+      "batch": 1,
+      "dtype": "float32",
+      "hidden": false,
+      "device": "cpu"
+    },
+    {
+      "id": "PW-011",
+      "reset": "none",
+      "parameter": "scalar",
+      "steps": 2,
+      "batch": 1,
+      "dtype": "float32",
+      "hidden": false,
+      "device": "cpu"
+    }
+  ]
+}

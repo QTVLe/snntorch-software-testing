@@ -80,10 +80,7 @@ class Triangular(torch.autograd.Function):
     def backward(ctx, grad_output):
         (input_,) = ctx.saved_tensors
         grad_input = grad_output.clone()
-        if input_ < 0:
-            grad = grad_input * ctx.threshold
-        else:
-            grad = -grad_input * ctx.threshold
+        grad = grad_input * torch.where(input_ < 0, ctx.threshold, -ctx.threshold)
         return grad, None
 
 
@@ -249,7 +246,7 @@ def spike_rate_escape(beta=1, slope=25):
     slope = slope
 
     def inner(x):
-        return SpikeRateEscape.apply(x, slope)
+        return SpikeRateEscape.apply(x, beta, slope)
 
     return inner
 
@@ -359,7 +356,7 @@ class LeakySpikeOperator(torch.autograd.Function):
         (out,) = ctx.saved_tensors
         grad_input = grad_output.clone()
         grad = grad_input * out + (~out.bool()).float() * ctx.slope * grad_input
-        return grad
+        return grad, None
 
 
 def LSO(slope=0.1):
@@ -367,7 +364,7 @@ def LSO(slope=0.1):
     slope = slope
 
     def inner(x):
-        return StochasticSpikeOperator.apply(x, slope)
+        return LeakySpikeOperator.apply(x, slope)
 
     return inner
 
